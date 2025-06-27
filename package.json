@@ -1,5 +1,5 @@
 {
-    "name": "ghost-starter-theme",
+    "name": "clacke",
     "description": "A starter theme for Ghost theme development",
     "demo": "https://starter.ghost.io",
     "version": "1.0.0",
@@ -18,9 +18,9 @@
         "pretest": "npm run build"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "blue linden",
+        "email": "blue@linden.rocks",
+        "url": "https://blue.linden.rocks"
     },
     "gpm": {
         "type": "theme",
@@ -36,10 +36,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Starter.git"
+        "url": "https://github.com/bluelinden/clacke.git"
     },
-    "bugs": "https://github.com/TryGhost/Starter/issues",
-    "contributors": "https://github.com/TryGhost/Starter/graphs/contributors",
+    "bugs": "https://github.com/bluelinden/clacke/issues",
+    "contributors": ["https://github.com/bluelinden/clacke/graphs/contributors"],
     "devDependencies": {
         "@babel/core": "^7.21.0",
         "@babel/preset-env": "^7.20.2",
