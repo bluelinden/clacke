@@ -1,5 +1,5 @@
 # Learn more → https://github.com/TryGhost/action-deploy-theme#getting-started
-name: Deploy Theme
+name: Deploy Ghost Theme
 on:
     push:
         branches:
