@@ -8,57 +8,62 @@
     <script src="{{asset "built/index.js"}}" defer></script>
 
     <title>{{meta_title}}</title>
+    <style>
+        :root {
+            --screendoor-img: url({{asset "images/screen-tile.png" }});
+        }
+    </style>
+
+    {{> "css/fonts"}}
 
     {{ghost_head}}
     {{!-- Outputs important meta data and settings, should always be in <head> --}}
 
 </head>
-<body class="{{body_class}}">
-<div class="gh-viewport">
+<body class="{{body_class}} bg-cke-beige">
+<div class="flex flex-row w-screen">
 
-<header id="gh-head" class="gh-head">
-    <nav class="gh-head-inner gh-container">
+<header class="min-w-56 max-w-56 h-screen border-r-3 br-black fixed bg-beige">
+    <nav class="flex flex-col">
 
-        <div class="gh-head-brand">
-            <a class="gh-head-logo" href="{{@site.url}}">
-                {{#if @site.logo}}
-                    <img src="{{@site.logo}}" alt="{{@site.title}}" />
+        <div class="bg-black pt-10 pb-6">
+            <a class="" href="{{@site.url}}">
+                {{#if @site.icon}}
+                    <div class="bg-black p-[4px] rounded-[32px] brightness-105 mx-12 mb-2">
+                        <img src="{{@site.icon}}" alt="{{@site.title}}" class="width-full screendoor rounded-[28px]" />
+                    </div>
                 {{else}}
                     {{@site.title}}
                 {{/if}}
             </a>
-            <a class="gh-burger" role="button" aria-label="menu">
-                <div class="gh-burger-box">
-                    <div class="gh-burger-inner"></div>
-                </div>
-            </a>
+
+            <h1 class="font-vfd text-vfd-light text-lg bg-vfd-dark text-center ml-2 mr-2">{{@site.title}}</h1>
         </div>
-        <div class="gh-head-menu">
+        {{> "deco/grille"}}
+        <div class="">
             {{navigation}}
         </div>
-        <div class="gh-head-actions">
-            <div class="gh-head-actions-list">
-                {{search}}
+        <div class="p-6 mt-auto">
+
                 {{#if @site.members_enabled}}
                     {{^if @member}}
-                    <a class="gh-button" href="{{@site.signup_url}}">Subscribe</a>
+                    <a class="btn-menu bg-cke-orange text-cke-beige border-black border-3" href="{{@site.signup_url}}">Subscribe</a>
                     {{else}}
-                    <a class="gh-button" href="#/portal/account">Account</a>
+                    <a class="btn-menu bg-cke-orange text-cke-beige border-black border-3" href="#/portal/account">Account</a>
                     {{/if}}
                 {{/if}}
-            </div>
         </div>
     </nav>
 </header>
 
-<main class="gh-main">
+<main class="pl-56">
 
     {{{body}}}
     {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
 
 </main>
 
-<footer class="gh-foot">
+{{!-- <footer class="">
     <div class="gh-container">
         <div class="gh-foot-menu">
             {{navigation type="secondary"}}
@@ -67,7 +72,7 @@
             Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
         </div>
     </div>
-</footer>
+</footer> --}}
 
 </div>
 

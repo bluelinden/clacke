@@ -39,7 +39,9 @@
         "url": "https://github.com/bluelinden/clacke.git"
     },
     "bugs": "https://github.com/bluelinden/clacke/issues",
-    "contributors": ["https://github.com/bluelinden/clacke/graphs/contributors"],
+    "contributors": [
+        "https://github.com/bluelinden/clacke/graphs/contributors"
+    ],
     "devDependencies": {
         "@babel/core": "^7.21.0",
         "@babel/preset-env": "^7.20.2",
@@ -50,6 +52,7 @@
         "bestzip": "^2.2.1",
         "postcss": "^8.4.24",
         "postcss-import": "^15.1.0",
+        "postcss-nesting": "^13.0.2",
         "postcss-preset-env": "^8.0.1",
         "rollup": "^3.18.0",
         "rollup-plugin-livereload": "^2.0.5",
@@ -82,5 +85,10 @@
             }
         }
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "@tailwindcss/postcss": "^4.1.11",
+        "sqlite3": "^5.1.7",
+        "tailwindcss": "^4.1.11"
+    }
 }

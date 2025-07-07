@@ -2,9 +2,9 @@
 
 {{#post}}
 
-<article class="gh-article {{post_class}}">
+<article class="{{post_class}}">
 
-    <header class="gh-header gh-canvas">
+    <header class="gh-canvas">
         <span class="gh-post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
         <h1 class="gh-title">{{title}}</h1>
 
@@ -13,7 +13,7 @@
         {{/if}}
 
         {{#if feature_image}}
-        <figure class="gh-feature-image">
+        <figure class="">
             <picture>
               <source 
                 srcset="
@@ -57,7 +57,7 @@
         {{/if}}
     </header>
 
-    <div class="gh-content gh-canvas">
+    <div class="gh-canvas">
         {{content}}
     </div>
 
