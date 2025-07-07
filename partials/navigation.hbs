@@ -1,0 +1,17 @@
+<ul class="flex flex-col gap-2 p-6">
+    {{#foreach navigation}}
+        <li>
+            <a href="{{url}}" class="flex flex-row items-center text-print-gray gap-2 cursor-pointer">
+                <div class="pointer-events-none p-4 block rounded-md border-black border-3 bg-sil-gray"></div>
+                {{#if current}}
+                    {{> "deco/led_on"}}
+                {{else}}
+                    {{> "deco/led_off"}}
+                {{/if}}
+                <span>
+                    {{label}}
+                </span>
+            </a>
+        </li>
+    {{/foreach}}
+</ul>
