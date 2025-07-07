@@ -1,0 +1,6 @@
+[submodule "vcd_design_system"]
+	path = vcd_design_system
+	url = https://github.com/NBlancs/vcd_design_system
+[submodule "deps/vcd_design_system"]
+	path = deps/vcd_design_system
+	url = https://github.com/NBlancs/vcd_design_system
