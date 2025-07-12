@@ -20,13 +20,13 @@
     {{!-- Outputs important meta data and settings, should always be in <head> --}}
 
 </head>
-<body class="{{body_class}} bg-cke-beige">
+<body class="{{body_class}} bg-plastic-beige">
 <div class="flex flex-row w-screen">
 
 <header class="min-w-56 max-w-56 h-screen border-r-3 br-black fixed bg-beige">
     <nav class="flex flex-col">
 
-        <div class="bg-black pt-10 pb-6">
+        <div class="bg-black pt-12 pb-12">
             <a class="" href="{{@site.url}}">
                 {{#if @site.icon}}
                     <div class="bg-black p-[4px] rounded-[32px] brightness-105 mx-12 mb-2">
@@ -36,8 +36,6 @@
                     {{@site.title}}
                 {{/if}}
             </a>
-
-            <h1 class="font-vfd text-vfd-light text-lg bg-vfd-dark text-center ml-2 mr-2">{{@site.title}}</h1>
         </div>
         {{> "deco/grille"}}
         <div class="">
@@ -47,9 +45,9 @@
 
                 {{#if @site.members_enabled}}
                     {{^if @member}}
-                    <a class="btn-menu bg-cke-orange text-cke-beige border-black border-3" href="{{@site.signup_url}}">Subscribe</a>
+                    <a class="btn-menu bg-plastic-orange text-plastic-beige border-black border-3" href="{{@site.signup_url}}">Subscribe</a>
                     {{else}}
-                    <a class="btn-menu bg-cke-orange text-cke-beige border-black border-3" href="#/portal/account">Account</a>
+                    <a class="btn-menu bg-plastic-orange text-plastic-beige border-black border-3" href="#/portal/account">Account</a>
                     {{/if}}
                 {{/if}}
         </div>

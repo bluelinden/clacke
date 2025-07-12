@@ -4,16 +4,16 @@
 
 <article class="{{post_class}}">
 
-    <header class="gh-canvas">
-        <span class="gh-post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
-        <h1 class="gh-title">{{title}}</h1>
+    <header class="gh-canvas bg-plastic-gray min-h-[75vh] max-h-screen grid grid-cols-12 grid-rows-8 gap-6 p-6">
+        {{!-- <span class="gh-post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
+        <h1 class="gh-title">{{title}}</h1> --}}
 
         {{#if custom_excerpt}}
         <p class="gh-excerpt">{{custom_excerpt}}</p>
         {{/if}}
 
         {{#if feature_image}}
-        <figure class="">
+        <figure class="col-span-6 col-start-6 row-span-6 row-start-2">
             <picture>
               <source 
                 srcset="
@@ -47,11 +47,12 @@
                 {{img_url feature_image size="xl"}} 2000w"
                 sizes="(min-width: 1200px) 1200px, 90vw" 
                 src="{{img_url feature_image size="l"}}"
+                class="screendoor"
                 alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
               >
             </picture>
             {{#if feature_image_caption}}
-                <figcaption>{{feature_image_caption}}</figcaption>
+                <figcaption class="">{{feature_image_caption}}</figcaption>
             {{/if}}
         </figure>
         {{/if}}

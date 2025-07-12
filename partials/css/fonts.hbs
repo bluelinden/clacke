@@ -1,53 +1,114 @@
 <style>
     /* doto-800 - latin */
     @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Doto';
     font-style: normal;
     font-weight: 800;
-    src: url({{asset "fonts/doto-v2-latin-800.woff2"}}) format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        url({{asset "fonts/doto-v2-latin-800.ttf"}}) format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    src: url({{asset "fonts/doto-v2-latin-800.woff2"}}) format('woff2'),
+        url({{asset "fonts/doto-v2-latin-800.ttf"}}) format('truetype');
     }
 
 
     /* lexend-regular - latin */
     @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 400;
-    src: url({{asset "fonts/lexend-v25-latin-regular.woff2"}}) format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        url({{asset "fonts/lexend-v25-latin-regular.ttf"}}) format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    src: url({{asset "fonts/lexend-v25-latin-regular.woff2"}}) format('woff2'),
+        url({{asset "fonts/lexend-v25-latin-regular.ttf"}}) format('truetype');
     }
 
     /* lexend-500 - latin */
     @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 500;
-    src: url({{asset "fonts/lexend-v25-latin-500.woff2"}}) format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        url({{asset "fonts/lexend-v25-latin-500.ttf"}}) format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    src: url({{asset "fonts/lexend-v25-latin-500.woff2"}}) format('woff2'),
+        url({{asset "fonts/lexend-v25-latin-500.ttf"}}) format('truetype');
     }
 
     /* lexend-700 - latin */
     @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 700;
-    src: url({{asset "fonts/lexend-v25-latin-700.woff2"}}) format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        url({{asset "fonts/lexend-v25-latin-700.ttf"}}) format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    src: url({{asset "fonts/lexend-v25-latin-700.woff2"}}) format('woff2'),
+        url({{asset "fonts/lexend-v25-latin-700.ttf"}}) format('truetype');
     }
 
     /* lexend-900 - latin */
     @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 900;
-    src: url({{asset "fonts/lexend-v25-latin-900.woff2"}}) format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        url({{asset "fonts/lexend-v25-latin-900.ttf"}}) format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    src: url({{asset "fonts/lexend-v25-latin-900.woff2"}}) format('woff2'),
+        url({{asset "fonts/lexend-v25-latin-900.ttf"}}) format('truetype');
+    }
+
+    /* segment - latin */
+    @font-face {
+    font-display: swap;
+    font-family: 'segment';
+    font-style: normal;
+    font-weight: 600;
+    src: url({{asset "fonts/7segment.woff"}}) format('woff'),
+        url({{asset "fonts/7segment.ttf"}}) format('truetype');
+    }
+
+    /* Outward */
+    @font-face {
+        font-family: 'Outward';
+        src: url({{asset "fonts/outward-block-webfont.woff2"}}) format('woff2'),
+            url({{asset "fonts/outward-block.ttf"}}) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /* Terminal Grotesque */
+    @font-face {
+        font-family: 'Terminal Grotesque';
+            src: url({{asset "fonts/terminal-grotesque-webfont.woff2"}}) format('woff2'),
+            url({{asset "fonts/terminal-grotesque-webfont.ttf"}}) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /* Millimetre Light */
+    @font-face {
+        font-family: 'Millimetre';
+            src: url({{asset "fonts/Millimetre-Light_web.woff2"}}) format('woff2'),
+            url({{asset "fonts/Millimetre-Light.otf"}}) format('opentype');
+        font-weight: 300;
+        font-style: normal;
+    }
+    /* Millimetre Regular */
+    @font-face {
+        font-family: 'Millimetre';
+            src: url({{asset "fonts/Millimetre-Regular_web.woff2"}}) format('woff2'),
+            url({{asset "fonts/Millimetre-Regular.otf"}}) format('opentype');
+        font-weight: 400;
+        font-style: normal;
+    }
+    /* Millimetre Bold */
+    @font-face {
+        font-family: 'Millimetre';
+            src: url({{asset "fonts/Millimetre-Bold_web.woff2"}}) format('woff2'),
+            url({{asset "fonts/Millimetre-Bold.otf"}}) format('opentype');
+        font-weight: 600;
+        font-style: normal;
+    }
+    /* Millimetre Extrablack */
+    @font-face {
+        font-family: 'Millimetre';
+            src: url({{asset "fonts/Millimetre-Extrablack_web.woff2"}}) format('woff2'),
+            url({{asset "fonts/Millimetre-Extrablack.otf"}}) format('opentype');
+        font-weight: 800;
+        font-style: normal;
     }
 
 </style>

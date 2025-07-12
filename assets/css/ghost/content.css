@@ -62,7 +62,7 @@
 .gh-canvas > ul,
 .gh-canvas > dl,
 .gh-canvas > p {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-weight: 400;
     font-size: 2rem;
     line-height: 1.6em;
@@ -123,14 +123,6 @@
     margin-top: 6vmin;
 }
 
-figcaption {
-    padding: 1.5rem 1.5rem 0;
-    text-align: center;
-    color: rgba(0,0,0,0.5);
-    font-weight: 600;
-    font-size: 1.3rem;
-    line-height: 1.4em;
-}
 
 figcaption strong {
     color: rgba(0,0,0,0.8);

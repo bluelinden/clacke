@@ -15,9 +15,9 @@ production stylesheet in assets/built/screen.css using: npm run dev
 /* @import "./components/forms.css"; */
 
 /* Ghost components */
-@import "./ghost/content.css";
+/* @import "./ghost/content.css"; */
 /* @import "./ghost/header.css"; */
-@import "./ghost/readmore.css";
+/* @import "./ghost/readmore.css"; */
 @import "./ghost/members.css";
 @import "./ghost/errors.css";
 @import "./ghost/footer.css";
@@ -29,15 +29,20 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @source not "../built";
 
 @theme {
-    --color-cke-orange: oklch(0.6908 0.2339 42.29);
-    --color-cke-beige: oklch(0.9132 0.0203 65.13);
+    --color-plastic-orange: oklch(0.6908 0.2339 42.29);
+    --color-plastic-beige: oklch(0.9132 0.0203 65.13);
+    --color-plastic-gray: oklch(0.3279 0.0077 270.8);
     --color-print-gray: oklch(0.326 0.0125 140.47);
     --color-print-blue: oklch(0.5369 0.206 285.53);
-    --color-sil-gray: oklch(0.7092 0.0084 65.13);
+    --color-silicone-gray: oklch(0.7092 0.0084 65.13);
     --color-vfd-dark: oklch(0.1647 0.0119 179.16);
     --color-vfd-light: oklch(0.8056 0.0829 180.5);
     --font-sans: Lexend, sans-serif;
     --font-vfd: Doto, monospace, sans-serif;
+    --font-segment: Segment, monospace, sans-serif;
+    --font-condensed: Outward, sans-serif;
+    --font-pixel: Terminal Grotesque, sans-serif;
+    --font-scifi: Millimetre, monospace;
 }
 
 @utility screendoor {
@@ -54,4 +59,20 @@ production stylesheet in assets/built/screen.css using: npm run dev
 
 @utility btn-menu {
     @apply text-menu text-center p-4 w-full block rounded-full;
+}
+
+figure {
+    @apply bg-black p-3 pt-0 rounded-lg relative h-min;
+    &::before {
+        content: "Hi-Res Image Display";
+        @apply text-silicone-gray font-scifi text-[0.4cm] my-2 ml-2;
+    }
+    img,
+    picture {
+        @apply screendoor rounded-sm;
+    }
+
+    figcaption {
+        @apply font-vfd bg-vfd-dark text-vfd-light p-2 mt-3 rounded-sm text-xl h-full;
+    }
 }
