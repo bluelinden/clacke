@@ -69,7 +69,7 @@ figure {
         @apply text-silicone-gray font-scifi text-[0.4cm] w-full block bg-black pl-1;
     }
     img,
-    picture {
+    picture:not(:hover) {
         @apply screendoor;
     }
 
