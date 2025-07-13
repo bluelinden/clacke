@@ -37,6 +37,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
     --color-silicone-gray: oklch(0.7092 0.0084 65.13);
     --color-vfd-dark: oklch(0.1647 0.0119 179.16);
     --color-vfd-light: oklch(0.8056 0.0829 180.5);
+    --color-display-black: oklch(0.1528 0.0302 253.71);
     --font-sans: Lexend, sans-serif;
     --font-vfd: Doto, monospace, sans-serif;
     --font-segment: Segment, monospace, sans-serif;
@@ -62,17 +63,17 @@ production stylesheet in assets/built/screen.css using: npm run dev
 }
 
 figure {
-    @apply bg-black p-3 pt-0 rounded-lg relative h-min;
+    @apply bg-display-black border-16 border-black rounded-2xl relative h-min;
     &::before {
         content: "Hi-Res Image Display";
-        @apply text-silicone-gray font-scifi text-[0.4cm] my-2 ml-2;
+        @apply text-silicone-gray font-scifi text-[0.4cm] w-full block bg-black pl-1;
     }
     img,
     picture {
-        @apply screendoor rounded-sm;
+        @apply screendoor;
     }
 
     figcaption {
-        @apply font-vfd bg-vfd-dark text-vfd-light p-2 mt-3 rounded-sm text-xl h-full;
+        @apply font-pixel text-white p-2 rounded-sm text-[24px] h-full;
     }
 }
