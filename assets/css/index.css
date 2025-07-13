@@ -68,7 +68,7 @@ figure {
         content: "Hi-Res Image Display";
         @apply text-silicone-gray font-scifi text-[0.4cm] w-full block bg-black pl-1;
     }
-    img,
+    img:not(:hover),
     picture:not(:hover) {
         @apply screendoor;
     }

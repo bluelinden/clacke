@@ -4,7 +4,7 @@
 
 <article class="{{post_class}}">
 
-    <header class="gh-canvas bg-plastic-gray min-h-[75vh] max-h-screen grid grid-cols-12 grid-rows-7 gap-6 p-6">
+    <header class="gh-canvas bg-plastic-gray min-h-[75vh] max-h-screen grid grid-cols-12 grid-rows-7 gap-6 gap-y-5 p-6">
 
         <div class="col-span-4 row-span-4 col-start-2 row-start-2">
             <h1 class="text-white font-sans text-7xl font-bold">{{title}}</h1>
@@ -60,7 +60,7 @@
                 {{img_url feature_image size="xl"}} 2000w"
                 sizes="(min-width: 1200px) 1200px, 90vw"
                 src="{{img_url feature_image size="l"}}"
-                class="screendoor"
+                class=""
                 alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
               >
             </picture>
