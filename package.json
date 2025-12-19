@@ -11,11 +11,11 @@
         "desktop": "assets/screenshot-desktop.jpg"
     },
     "scripts": {
-        "dev": "rollup -c --environment BUILD:development -w",
-        "build": "rollup -c --environment BUILD:production",
-        "zip": "npm run build && bestzip $npm_package_name.zip assets/* partials/* members/* *.hbs package.json",
-        "test": "npx gscan .",
-        "pretest": "npm run build"
+        "dev": "bunx --bun rollup -c --environment BUILD:development -w",
+        "build": "bunx --bun rollup -c --environment BUILD:production",
+        "zip": "bun run build && bestzip $npm_package_name.zip assets/* partials/* members/* *.hbs package.json",
+        "test": "bunx gscan .",
+        "pretest": "bun run build"
     },
     "author": {
         "name": "blue linden",
@@ -50,6 +50,7 @@
         "@rollup/plugin-node-resolve": "^15.0.1",
         "@rollup/plugin-terser": "^0.4.0",
         "bestzip": "^2.2.1",
+        "bun-plugin-tailwind": "^0.0.15",
         "postcss": "^8.4.24",
         "postcss-import": "^15.1.0",
         "postcss-nesting": "^13.0.2",
@@ -88,6 +89,7 @@
     "type": "module",
     "dependencies": {
         "@tailwindcss/postcss": "^4.1.11",
+        "caniuse-lite": "^1.0.30001746",
         "sqlite3": "^5.1.7",
         "tailwindcss": "^4.1.11"
     }

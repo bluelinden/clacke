@@ -38,12 +38,14 @@ production stylesheet in assets/built/screen.css using: npm run dev
     --color-vfd-dark: oklch(0.1647 0.0119 179.16);
     --color-vfd-light: oklch(0.8056 0.0829 180.5);
     --color-display-black: oklch(0.1528 0.0302 253.71);
-    --font-sans: Lexend, sans-serif;
+    --font-cksans: CKSans, sans-serif;
+    --font-sans: Gabarito, sans-serif;
+    --font-serif: Andada Pro, serif;
     --font-vfd: Doto, monospace, sans-serif;
     --font-segment: Segment, monospace, sans-serif;
     --font-condensed: Outward, sans-serif;
     --font-pixel: Terminal Grotesque, sans-serif;
-    --font-scifi: Millimetre, monospace;
+    --font-scifi: Orbitron, monospace;
 }
 
 @utility screendoor {
@@ -66,7 +68,7 @@ figure {
     @apply bg-display-black border-16 border-black rounded-2xl relative h-min;
     &::before {
         content: "Hi-Res Image Display";
-        @apply text-silicone-gray font-scifi text-[0.4cm] w-full block bg-black pl-1;
+        @apply text-silicone-gray font-scifi text-lg font-bold w-full block bg-black pl-1;
     }
     img:not(:hover),
     picture:not(:hover) {

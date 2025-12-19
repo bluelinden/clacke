@@ -23,3 +23,7 @@ projectFilesBackup
 
 dist/
 .ghost/
+ghost-*.log
+config.*.json
+content/
+themes/
